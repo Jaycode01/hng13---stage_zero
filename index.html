@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Nexon - Profile Card</title>
+  </head>
+  <body>
+    <article data-testid="test-profile-card">
+      <div class="card-header">
+        <div class="avatar-container">
+          <figure>
+            <img
+              data-testid="test-user-avatar"
+              src="./assets/DSC_3279.jpg"
+              alt="Profile picture of John Morton"
+            />
+            <img
+              src="./assets/github_icon.jpeg"
+              alt="github icon"
+              class="status-indicator"
+            />
+          </figure>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <h1 data-testid="test-user-name">Joseph Lamidi</h1>
+        <div class="subtitle">
+          Web Engineer | Design & Conversion Optimization
+        </div>
+
+        <p data-testid="test-user-bio">
+          Web engineer who actually cares about the design side. I spend half my
+          time writing code, the other half A/B testing why people bounce at
+          checkout. My favorite projects? The ones where we double conversion
+          rates by fixing "small" things everyone else ignored.
+        </p>
+
+        <div class="skills-container">
+          <span class="skill-tag">Web solutions</span>
+          <span class="skill-tag">Web Design</span>
+          <span class="skill-tag">Frontend</span>
+        </div>
+
+        <div class="time-display">
+          <span data-testid="test-user-time"></span>
+        </div>
+
+        <button class="cta-button">
+          Get In Touch <img src="./assets/chevron_right.svg" alt="chevron" />
+        </button>
+
+        <nav
+          data-testid="test-user-social-links"
+          aria-label="Social media links"
+        >
+          <div class="section-title">Connect</div>
+          <ul>
+            <li>
+              <a
+                href="https://x.com/nexon_codes"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/Jaycode01"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/joseph-lamidi-9b83a4286"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://instagram.com/nexon.codes"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-dribbble"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="lists-container">
+          <section>
+            <h2 class="section-title">Hobbies</h2>
+            <ul data-testid="test-user-hobbies">
+              <li>Designs Research</li>
+              <li>Coding</li>
+              <li>Minimalist Art</li>
+              <li>Ideas development</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="section-title">Dislikes</h2>
+            <ul data-testid="test-user-dislikes">
+              <li>Poor Typography</li>
+              <li>Cluttered Interfaces</li>
+              <li>Slow Loading Times</li>
+              <li>Bad Designs Patterns</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </article>
+
+    <!-- Scripts -->
+    <script src="./scripts.js"></script>
+  </body>
+</html>
