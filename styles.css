@@ -32,6 +32,7 @@ article[data-testid="test-profile-card"] {
   max-width: 50%;
   width: 100%;
   position: relative;
+  margin-bottom: 70px;
   overflow: hidden;
 }
 
@@ -279,21 +280,35 @@ ul[data-testid="test-user-dislikes"] li::before {
   font-size: 18px;
 }
 
-/* Tablet and Desktop Layout */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
 @media (min-width: 768px) {
   .lists-container {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-/* Focus styles for accessibility */
 a:focus,
 button:focus {
   outline: 3px solid #0066ff;
   outline-offset: 2px;
 }
 
-/* Responsive */
 @media (max-width: 500px) {
   article[data-testid="test-profile-card"] {
     max-width: 100%;

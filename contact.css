@@ -11,7 +11,7 @@
 body {
   background-color: #ebebeb;
   font-family: "Funnel Display", fantasy;
-  height: 100vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   color: #333;
@@ -24,6 +24,7 @@ main {
   width: 80%;
   padding: 5%;
   display: flex;
+  margin-bottom: 70px;
   border-radius: 50px;
   flex-direction: row;
   justify-content: space-between;
@@ -186,6 +187,25 @@ label {
   border: 1px solid #1b8a35;
   border-radius: 8px;
   margin-bottom: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  background-color: inherit;
+  margin-left: 40px;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
