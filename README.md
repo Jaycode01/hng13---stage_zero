@@ -1,4 +1,4 @@
-##HNG NEXON SPACE
+## HNG NEXON SPACE
 > A modern, accessible, and responsive web portfolio built for HNG13 Frontend Track
 
 ### Features
