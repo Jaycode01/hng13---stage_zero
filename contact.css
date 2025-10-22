@@ -25,6 +25,7 @@ main {
   width: 80%;
   padding: 5%;
   display: flex;
+  border-radius: 50px;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -145,4 +146,29 @@ button > span:first-child {
 
 button > span:nth-child(2) {
   margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  body {
+    max-width: fit-content;
+  }
+
+  main {
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 50px;
+  }
+
+  main > section {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h1,
+  .description {
+    width: 100%;
+  }
 }
