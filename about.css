@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Funnel Display";
+  src: url("./fonts/FunnelDisplay-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Galindo";
+  src: url("./fonts/Galindo-Regular.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Funnel Display", fantasy;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  justify-content: space-between;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Galindo";
+  font-size: 55px;
+}
+
+h1:nth-child(2) {
+  margin-left: 70px;
+}
+
+.left_section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.right_section {
+  height: 500px;
+  width: fit-content;
+}
+
+.right_section img {
+  height: 100%;
+  width: 400px;
+  margin-left: 100px;
+}
+
+.about_me {
+  font-size: 17px;
+}
+
+.cta {
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #333;
+  width: fit-content;
+  border: 2px solid #333;
+  font-size: 15px;
+}
