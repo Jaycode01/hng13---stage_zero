@@ -7,6 +7,13 @@
     <title>Nexon | Reach Out</title>
   </head>
   <body>
+    <div
+      data-testid="test-contact-success"
+      class="success-message"
+      style="display: none"
+    >
+      Message Sent! Thanks for reaching out.
+    </div>
     <main>
       <section class="left_section">
         <p class="label">reach out to nexon</p>
@@ -14,37 +21,112 @@
           Let's <b>discuss</b> about your project and increase conversion rate.
         </h1>
         <p class="description">
-          Areyou looking for a top notch developer to build your web solutions
-          with minimalist, stunning and eye-cathing designs? Reach out to me.
+          Are you looking for a top notch developer to build your web solutions
+          with minimalist, stunning and eye-catching designs? Reach out to me.
         </p>
         <div class="other_contacts">
           <a href="mailto:josephlamidijoslam@gmail.com">
             <img src="./assets/mail.svg" alt="mail icon" />
             <span>josephlamidijoslam@gmail.com</span>
           </a>
-          <a href="telto:+2349060748887">
+          <a href="tel:+2349060748887">
             <img src="./assets/phone.svg" alt="phone icon" />
             <span>+234 906 074 8887</span>
           </a>
         </div>
       </section>
       <section>
-        <form class="contact_form">
-          <div class="name">
-            <img src="./assets/user.svg" alt="user icon" />
-            <input type="text" placeholder="Joseph Lamidi" />
+        <form class="contact_form" novalidate>
+          <div class="form_group">
+            <label for="name">Full Name <span class="required">*</span></label>
+            <div class="name">
+              <img src="./assets/user.svg" alt="user icon" />
+              <input
+                type="text"
+                placeholder="Joseph Lamidi"
+                id="name"
+                name="name"
+                data-testid="test-contact-name"
+                aria-describedby="name-error"
+                autocomplete="name"
+              />
+            </div>
+            <span
+              id="name-error"
+              data-testid="test-contact-error-name"
+              class="error-message"
+              role="alert"
+            >
+              Please enter your full name
+            </span>
           </div>
-          <div class="email">
-            <img src="./assets/mail-black.svg" alt="mail icon" />
-            <input type="email" placeholder="nexon@nas.com" />
+
+          <div class="form_group">
+            <label for="email">Email <span class="required">*</span></label>
+            <div class="email">
+              <img src="./assets/mail-black.svg" alt="mail icon" />
+              <input
+                type="email"
+                placeholder="nexon@nas.com"
+                id="email"
+                name="email"
+                data-testid="test-contact-email"
+                aria-describedby="email-error"
+                autocomplete="email"
+              />
+            </div>
+            <span
+              id="email-error"
+              data-testid="test-contact-error-email"
+              class="error-message"
+              role="alert"
+            >
+              Please enter a valid email address
+            </span>
           </div>
-          <textarea
-            name=""
-            id=""
-            class="message"
-            placeholder="Your message..."
-          ></textarea>
-          <button type="submit">
+          <div class="form_group">
+            <label for="subject">Subject <span class="required">*</span></label>
+            <div class="subject">
+              <input
+                type="text"
+                placeholder="Project inquiry"
+                id="subject"
+                name="subject"
+                data-testid="test-contact-subject"
+                aria-describedby="subject-error"
+              />
+            </div>
+            <span
+              id="subject-error"
+              data-testid="test-contact-error-subject"
+              class="error-message"
+              role="alert"
+            >
+              Please enter a subject
+            </span>
+          </div>
+
+          <div class="form_group">
+            <label for="message">Message <span class="required">*</span></label>
+            <textarea
+              class="message"
+              placeholder="Your message..."
+              id="message"
+              name="message"
+              data-testid="test-contact-message"
+              aria-describedby="message-error"
+            ></textarea>
+            <span
+              id="message-error"
+              data-testid="test-contact-error-message"
+              class="error-message"
+              role="alert"
+            >
+              Message must be at least 10 characters long
+            </span>
+          </div>
+
+          <button type="submit" data-testid="test-contact-submit">
             <span>
               <img src="./assets/arrow_right.svg" alt="arrow right" />
             </span>

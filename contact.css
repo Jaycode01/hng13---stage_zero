@@ -12,7 +12,6 @@ body {
   background-color: #ebebeb;
   font-family: "Funnel Display", fantasy;
   height: 100vh;
-  max-height: 100vh;
   display: flex;
   flex-direction: column;
   color: #333;
@@ -88,7 +87,8 @@ h1 {
 }
 
 .name,
-.email {
+.email,
+.subject {
   display: flex;
   flex-direction: row;
   border: 1.5px solid #333;
@@ -132,6 +132,7 @@ button {
 
 button:hover {
   background-color: #0271e0a8;
+  transform: translateY(-5px);
 }
 
 button > span:first-child {
@@ -146,6 +147,46 @@ button > span:first-child {
 
 button > span:nth-child(2) {
   margin: 0 10px;
+}
+
+input.error,
+textarea.error {
+  border-color: #ff3b30;
+}
+
+label {
+  font-size: 14px;
+}
+
+.required {
+  color: #ff3b30;
+}
+
+.error-message {
+  font-size: 12px;
+  display: none;
+  color: #ff3b30;
+  margin-left: 4px;
+  transition: all 0.7s ease;
+}
+
+.error-message.show {
+  display: block;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.success-message {
+  padding: 16px;
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #1b8a35;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
