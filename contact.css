@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Funnel Display";
+  src: url("./fonts/FunnelDisplay-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Regular.woff2") format("woff2");
+}
+
+body {
+  background-color: #ebebeb;
+  font-family: "Funnel Display", fantasy;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: #f5f6f8;
+  width: 80%;
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main > section {
+  width: 50%;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 7px 20px;
+  border: 1px solid #808080;
+  width: fit-content;
+  border-radius: 30px;
+}
+
+h1 {
+  font-family: "Montserrat", fantasy;
+  font-weight: normal;
+  text-transform: capitalize;
+  width: 80%;
+}
+
+.description {
+  color: #808080;
+  width: 80%;
+}
+
+.other_contacts {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.other_contacts > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+  color: #333;
+}
+
+.other_contacts > a > img {
+  width: 20px;
+}
