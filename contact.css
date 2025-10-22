@@ -73,3 +73,76 @@ h1 {
 .other_contacts > a > img {
   width: 20px;
 }
+
+.contact_form {
+  width: 90%;
+  align-self: flex-end;
+  background-color: #fff;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 25px;
+  border-radius: 30px;
+}
+
+.name,
+.email {
+  display: flex;
+  flex-direction: row;
+  border: 1.5px solid #333;
+  border-radius: 5px;
+  padding: 10px 20px;
+  gap: 10px;
+}
+
+input {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+textarea {
+  outline: none;
+  font-size: 15px;
+  font-family: inherit;
+  border: 1px solid #333;
+  padding: 20px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  background-color: #0270e0;
+  color: #fff;
+  font-family: inherit;
+  border: none;
+  padding: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  background-color: #0271e0a8;
+}
+
+button > span:first-child {
+  background: #fff;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+button > span:nth-child(2) {
+  margin: 0 10px;
+}
